@@ -2,14 +2,19 @@
 
 Laravel environment on docker.
 
-## Install
+## Support 
+
+- PHP-FPM
+- Nginx
+- MySQL
+
+## Installation
 
 ## 1. Add docker-laravel as a submodule
 
 Add docker-laravel as a submodule in your project.
 
 ```
-$ mkdir YOUR_PRJECT
 $ cd YOUR_PRJECT
 $ git submodule add git@github.com:c8112002/docker-laravel.git docker
 ```
@@ -32,15 +37,13 @@ Then, edit `.env` for your environment.
 $ docker-compose up -d
 ```
 
-
 ### 3. Create a laravel project
 
 ```
 $ sh scripts/dev.sh create-project
 ```
-
 
-### 4. Edit `.env` for Laravel
+### 4. Edit `.env` of Laravel
 
 This is an example of `PROJECT_NAME/.env`.
 
@@ -59,4 +62,3 @@ DB_PASSWORD=secret
 ・
 ・
 ```
-
