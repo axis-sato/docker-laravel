@@ -27,3 +27,24 @@ $ docker-compose up -d
 $ sh scripts/dev.sh create-project
 ```
 
+
+### 4. Edit `.env` for Laravel
+
+This is an example of `PROJECT_NAME/.env`.
+
+```
+APP_NAME=test
+・
+・
+・
+DB_CONNECTION=mysql
+DB_HOST=db
+DB_PORT=3306
+DB_DATABASE=test
+DB_USERNAME=test
+DB_PASSWORD=secret
+・
+・
+・
+```
+

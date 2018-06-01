@@ -9,6 +9,8 @@ services:
         - APP_CONTAINER_PATH=${APP_CONTAINER_PATH}
     volumes:
       - .:${APP_CONTAINER_PATH}
+    depends_on:
+      - db
   
   nginx:
     build:
@@ -20,3 +22,20 @@ services:
       - "${NGINX_HOST_HTTPS_PORT}:443"
     depends_on:
       - app
+
+  db:
+    build:
+      context: ./mysql
+      args:
+        - MYSQL_VERSION=${MYSQL_VERSION}
+    restart: always
+    environment:
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - TZ=${TIMEZONE}
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+    ports:
+      - "${MYSQL_HOST_PORT}:3306"
