@@ -1,0 +1,12 @@
+### app ##############
+
+PROJECT_NAME=test
+APP_CONTAINER_PATH=/var/www
+PHP_VERSION=7.2
+LARAVEL_VERSION=5.5
+
+
+### nginx ##############
+
+NGINX_HOST_HTTP_PORT=80
+NGINX_HOST_HTTPS_PORT=4443
