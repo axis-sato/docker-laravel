@@ -2,6 +2,18 @@
 
 Laravel environment on docker.
 
+## Install
+
+## 1. Add docker-laravel as a submodule
+
+Add docker-laravel as a submodule in your project.
+
+```
+$ mkdir YOUR_PRJECT
+$ cd YOUR_PRJECT
+$ git submodule add git@github.com:c8112002/docker-laravel.git docker
+```
+
 ## Usage
 
 ### 1. Setup `.env`

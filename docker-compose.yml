@@ -8,7 +8,7 @@ services:
         - PHP_VERSION=${PHP_VERSION}
         - APP_CONTAINER_PATH=${APP_CONTAINER_PATH}
     volumes:
-      - .:${APP_CONTAINER_PATH}
+      - ..:${APP_CONTAINER_PATH}
     depends_on:
       - db
   
