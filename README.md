@@ -43,22 +43,11 @@ $ docker-compose up -d
 $ sh scripts/dev.sh create-project
 ```
 
-### 4. Edit `.env` of Laravel
+### 4. Configure your laravel project
 
-This is an example of `PROJECT_NAME/.env`.
+Edit the configuration files shown below according to your environment.
 
-```
-APP_NAME=test
-・
-・
-・
-DB_CONNECTION=mysql
-DB_HOST=db
-DB_PORT=3306
-DB_DATABASE=test
-DB_USERNAME=test
-DB_PASSWORD=secret
-・
-・
-・
-```
+- `PROJECT_NAME/.env`
+- `PROJECT_NAME/config/*.php`
+
+See the [official laravel website](https://laravel.com/docs/installation) if you want to know how to configuration more.
