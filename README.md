@@ -48,7 +48,7 @@ $ sh scripts/dev.sh create-project
 
 Edit the configuration files shown below according to your environment.
 
-- `PROJECT_NAME/.env`
-- `PROJECT_NAME/config/*.php`
+- `APP_NAME/.env`
+- `APP_NAME/config/*.php`
 
 See the [official laravel website](https://laravel.com/docs/installation) if you want to know how to configuration more.
