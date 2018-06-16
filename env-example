@@ -4,6 +4,7 @@ PROJECT_NAME=test
 APP_CONTAINER_PATH=/var/www
 PHP_VERSION=7.2
 LARAVEL_VERSION=5.6
+LARAVEL_IDE_HELPER=true
 
 
 ### nginx ##############
