@@ -1,9 +1,15 @@
+### common ##############
+TIMEZONE=Asia/Tokyo
+LOCALE=ja
+
+
 ### app ##############
 
 APP_NAME=test
 APP_CONTAINER_PATH=/var/www
 PHP_VERSION=7.2
 LARAVEL_VERSION=5.6
+LARAVEL_SESSION_DRIVER=mysql
 LARAVEL_IDE_HELPER=true
 
 
@@ -21,4 +27,3 @@ MYSQL_USER=test
 MYSQL_PASSWORD=secret
 MYSQL_ROOT_PASSWORD=root
 MYSQL_HOST_PORT=33061
-TIMEZONE=Asia/Tokyo

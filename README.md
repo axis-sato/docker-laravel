@@ -44,7 +44,7 @@ $ docker-compose up -d
 $ sh scripts/dev.sh create-project
 ```
 
-### 4. Configure your laravel project
+### 4. Configure your laravel project if necessary
 
 Edit the configuration files shown below according to your environment.
 
