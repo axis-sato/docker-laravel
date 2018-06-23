@@ -7,6 +7,8 @@ services:
       args:
         - PHP_VERSION=${PHP_VERSION}
         - APP_CONTAINER_PATH=${APP_CONTAINER_PATH}
+        - XDEBUG_REMOTE_HOST=${XDEBUG_REMOTE_HOST}
+        - XDEBUG_IDEKEY=${XDEBUG_IDEKEY}
     volumes:
       - ..:${APP_CONTAINER_PATH}
     depends_on:

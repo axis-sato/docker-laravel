@@ -4,10 +4,12 @@ Laravel environment on docker.
 
 ## Support 
 
-- PHP-FPM
+- Laravel
+    - PHP-FPM
+    - [Laravel IDE Helper](https://github.com/barryvdh/laravel-ide-helper)
+    - Xdebug
 - Nginx
 - MySQL
-- [Laravel IDE Helper](https://github.com/barryvdh/laravel-ide-helper)
 
 ## Installation
 
