@@ -11,6 +11,7 @@ services:
         - XDEBUG_IDEKEY=${XDEBUG_IDEKEY}
     volumes:
       - ..:${APP_CONTAINER_PATH}
+      - ./logs/app:${APP_CONTAINER_PATH}/${APP_NAME}/storage/logs
     depends_on:
       - db
   
@@ -19,6 +20,8 @@ services:
       context: ./nginx
       args:
         - APP_NAME=${APP_NAME}
+    volumes:
+      - ./logs/nginx:/var/log/nginx
     ports:
       - "${NGINX_HOST_HTTP_PORT}:80"
       - "${NGINX_HOST_HTTPS_PORT}:443"
@@ -39,5 +42,6 @@ services:
       - TZ=${TIMEZONE}
     volumes:
       - ./mysql/data:/var/lib/mysql
+      - ./logs/db:/var/log/mysql
     ports:
       - "${MYSQL_HOST_PORT}:3306"
