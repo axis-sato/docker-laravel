@@ -46,6 +46,14 @@ create_project () {
     edit_session_config
 }
 
+watch () {
+    docker-compose exec node bash -c "cd \"./$APP_NAME\" && \
+    yarn install && \
+    yarn run watch
+    "
+}
+
 case $1 in
     "create-project") create_project;;
+    "watch") watch;;
 esac

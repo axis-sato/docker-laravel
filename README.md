@@ -10,6 +10,8 @@ Laravel environment on docker.
     - Xdebug
 - Nginx
 - MySQL
+- Node
+    - Yarn
 
 ## Installation
 
@@ -54,3 +56,9 @@ Edit the configuration files shown below according to your environment.
 - `APP_NAME/config/*.php`
 
 See the [official laravel website](https://laravel.com/docs/installation) if you want to know how to configuration more.
+
+### 5. Watch assets for changes
+
+```
+$ sh scripts/dev.sh watch
+```

@@ -47,3 +47,13 @@ services:
       - ./logs/db:/var/log/mysql
     ports:
       - "${MYSQL_HOST_PORT}:3306"
+
+  node:
+    build:
+      context: ./node
+      args:
+        - NODE_VERSION=${NODE_VERSION}
+        - NODE_APP_CONTAINER_PATH=${NODE_APP_CONTAINER_PATH}
+    tty: true
+    volumes:
+      - ..:${NODE_APP_CONTAINER_PATH}
